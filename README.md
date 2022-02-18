@@ -1,2 +1,5 @@
 # fileshare
-This is a simple website that shares files to computers in a local network.
+This is a simple website that shares files to computers in a local network. 
+Users who will use this fileshare small web app will be having their websites already.
+
+All they will be doing is clicking on a user they want to connect to and be able to reach to their files.
