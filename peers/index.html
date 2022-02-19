@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Fileshare - Remove Boundries</title>
+    <title>Fileshare - Stella - Peers</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
@@ -15,36 +15,46 @@
   <body>
     <!--The header-->
     <header>
-      <a class="logo" href="/">fileshare</a>
+      <p class="logo">fileshare</p>
     </header>
 
     <!--The navigation-->
     <div class="nav">
       <ul class="menu-list">
-        <li><a href="./">Home</a></li>
-        <li><a href="./myfiles/">My files</a></li>
-        <li><a href="./peers/">Peers</a></li>
+        <li><a href="/fileshare/">Home</a></li>
+        <li><a href="/fileshare/files/">My files</a></li>
+        <li><a href="/fileshare/peers/">Peers</a></li>
       </ul>
     </div>
+
 
     <!--Central content-->
     <div class="content">
       <div class="intro">
         <h2>Other users in the peer.</h2>
-        <div class="user num1">
-          <img src="/assets/img1.jpg" alt="" />
-          <div>192.168.100.1</div>
-        </div>
-        <div class="user num2">
-          <img src="/assets/img2.jpg" alt="" />
-          <div>192.168.100.1</div>
+        <div class="peers">
+
+          <div class="user numo">
+            <div class="img one"></div>
+            <div class="identification">
+              <a href="http://192.168.100.1/fileshare">Marvin</a>
+            </div>
+          </div>
+
+          <div class="user numt">
+            <div class="img two"></div>
+            <div class="identification">
+              <a href="http://192.168.100.1/fileshare">Hirwa</a>
+            </div>
+          </div>
+        
         </div>
       </div>
     </div>
 
     <!--Footer-->
     <footer>
-      <p>Copyright 2022 - Hirwa Jean Eric</p>
+      <p>Copyright &copy; 2022 - Hirwa Jean Eric</p>
     </footer>
     <script src="./assets/js/main.js"></script>
   </body>

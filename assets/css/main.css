@@ -27,6 +27,8 @@ header {
 .nav {
   background-color: black;
   padding: 20px;
+  position: sticky;
+  top: 0;
 }
 
 .menu-list {
@@ -58,13 +60,13 @@ header {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("/assets/img/yellow-mug-besides-laptop-2967810e.jpg");
-  height: 600px;
+    url("../img/yellow-mug-besides-laptop-2967810e.jpg");
   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  height: 500px;
 }
 
 .content .intro {
@@ -98,17 +100,18 @@ header {
   color: white;
 }
 
-.content .intro a {
+.content .intro .join-peers {
   color: white;
   background-color: black;
   padding: 20px 30px;
   font-weight: 600;
 }
 
-.content .intro a:hover {
+.content .intro .join-peers:hover {
   background-color: orange;
   color: black;
-  border: 1px solid black;
+  border: 2px solid black;
+  transition-duration: 0.3s;
 }
 
 /*The footer section*/
@@ -121,4 +124,289 @@ footer {
 footer p {
   text-align: center;
   color: white;
+}
+
+/*MY FILES PAGE*/
+.content {
+  height: inherit;
+}
+
+.allmyfiles {
+  background-color: white;
+  padding: 20px;
+  width: 1000px;
+  /*height: 300px;*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.music, .documents, .videos {
+  background-color: white;
+  width: 32%;
+}
+
+.music ul,
+.documents ul,
+.videos ul {
+  list-style-type: none;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  padding: 20px;
+  min-height: 140px;
+}
+
+.music h3,
+.documents h3,
+.videos h3 {
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.music ul li a,
+.documents ul li a,
+.videos ul li a{
+  color: black;
+}
+
+.music ul h4,
+.documents ul h4,
+.videos ul h4{
+  margin: 20px 0px 20px 0px;
+}
+
+.music ul .more:hover,
+.documents ul .more:hover,
+.videos ul .more:hover{
+  color: brown;
+}
+
+.music ul .more,
+.documents ul .more,
+.videos ul .more{
+  color: orange;
+}
+
+
+.music ul li,
+.documents ul li,
+.videos ul li{
+  margin: 10px 0px 10px 0;
+  border-bottom: 1px solid black;
+}
+
+.music ul li a:hover,
+.documents ul li a:hover,
+.videos ul li a:hover{
+  color: orangered;
+  text-decoration: underline;
+}
+
+.content .intro .host {
+  color: white;
+}
+
+
+/*PEER PAGE*/
+.peers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 800px;
+}
+
+.peers .user {
+  background-color: white;
+  margin: 0 auto 0 auto;
+  width: 40%;
+  border-radius: 20px;
+}
+
+.peers .user:hover {
+  transform: scale(1.1);
+  transition-duration: 0.5s ease;
+}
+
+.peers .user .img {
+  height: 200px;
+  width: auto;
+  border-radius: 20px 20px 0 0 ;
+}
+
+.peers .numo .one {
+  background-image: url("../img/img1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.peers .numt .two {
+  background-image: url("../img/img2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.peers .user a {
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  font-size: 140%;
+}
+
+.peers .user a:hover {
+  transform: scale(1.1);
+  transition-duration: 0.5s ease;
+}
+
+.peers .user .identification {
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.peers .user .identification a {
+  margin: 0 auto 0 auto;
+}
+
+
+/*RESPONSIVENESS FOR PHONES ESPECIALLY*/
+@media (max-width: 600px) { 
+  header {
+    padding: 10px;
+  }
+
+  .logo {
+    font-size: 150%;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .menu-list {
+    flex-wrap: nowrap;
+  }
+
+  .menu-list li a {
+    padding: 10px 10px;
+    font-size: 90%;
+  }
+
+  /*Styling for the body content*/
+  .content {
+    padding: 15px;
+  }
+
+  .content .intro h1 {
+    text-align: center;
+  }
+
+  .content .intro h2 {
+    text-align: center;
+  }
+
+  .content .intro p {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .content .intro .join-peers {
+    color: white;
+    padding: 10px 15px;
+    font-weight: 500;
+    margin-bottom: 50px;
+  }
+
+
+  /*MY FILES PAGE*/
+  .content {
+    height: inherit;
+  }
+
+  .allmyfiles {
+    padding: 10px;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .music, .documents, .videos {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .music ul,
+  .documents ul,
+  .videos ul {
+    border-radius: 10px;
+    padding: 10px;
+    /*min-height: 140px;*/
+  }
+
+  .music h3,
+  .documents h3,
+  .videos h3 {
+    padding: 10px;
+    margin-bottom: 14px;
+  }
+
+  .music ul li a,
+  .documents ul li a,
+  .videos ul li a{
+    font-size: 90%;
+  }
+
+  .music ul li,
+  .documents ul li,
+  .videos ul li{
+    margin: 8px 0px 8px 0px;
+  }
+
+
+
+  /*PEER PAGE*/
+  .peers {
+    width: 100%;
+    height: inherit;
+  }
+
+  .peers .user {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .peers .user:hover {
+    transform: scale(1.05);
+  }
+
+  .peers .user a {
+    padding: 10px;
+    font-size: 100%;
+  }
+
+  .peers .user a:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s ease;
+  }
+
+  .peers .user .identification {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .peers .user .identification a {
+    margin: 0 auto 0 auto;
+  }  
 }
